@@ -1,0 +1,25 @@
+#include<stdio.h>
+char* fun(char *p)
+{
+ char *r=p;
+ char *q=p;
+ while(*r!='\0')
+	 {
+	  if((*r)%2 == 0)  /*字符的ascii码为偶数*/
+		  {
+		   *q=*r;  /*把字符的ascii码为偶数的字符保存在q指针所指向地址中*/
+		   q++;
+		  }
+	  r++;
+	 }
+ *q='\0';
+ return p;
+}
+int main(void)
+{
+ char a[100];
+ printf("请输入字符串: \n");
+ gets(a);
+ fun(a);
+ puts(a);
+}
