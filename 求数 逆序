@@ -1,0 +1,29 @@
+#include <stdio.h> 
+int main()
+{ 
+	int n,i=1;
+  n=getchar();
+	int t,g,s,b,k,w;
+	t=n;
+	while(t>=10)
+	{
+		t=t/10;
+		i=i+1;
+	}
+	printf("n %d 有%d位\n",n,i);
+	g=n%10;
+	s=n/10%10;
+	b=n/100%10;
+	k=n/1000%10;
+	w=n/10000;
+	switch(i)
+	{
+	case 1: printf("%d",n); break;
+	case 2: printf("%d%d",g,s); break;
+	case 3: printf("%d%d%d",g,s,b); break;
+	case 4: printf("%d%d%d%d",g,s,b,k); break;
+	case 5: printf("%d%d%d%d%d",g,s,b,k,w); break;
+} 
+	
+	return;
+}
