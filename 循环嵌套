@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+	int x,y,z;
+	int i=0;
+	for(x=1;x<20;x++)
+		{
+		for(y=1;y<50;y++)
+			{
+			for(z=1;z<100;z++)
+	
+	{
+	if(5*x+2*y+1*z==100&&x+y+z==50) {
+	i++;
+	printf ("五分 %d 两分 %d 一分 %d\n",x,y,z);}}}}
+	printf ("共有%d种方案",i) ;
+	
+}
+//main()另外一种 网上抄的
+//{
+//int x,y,z,i=0;
+//for(x=1;x<100;x++)
+//for(y=1;y<50;y++)
+//for(z=1;z<20;z++)
+//if((x+y+z==50)&&(x+2*y+5*z==100))
+//{
+//i++;
+//printf("num%d:%d,%d,%d\n",i,x,y,z);
+//}
+//}
