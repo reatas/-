@@ -1,0 +1,21 @@
+#include<stdio.h>
+int fbi(int t)
+{
+	long F=1,a=0,b=1;
+	while(F<=t)
+	{
+	F=a+b;
+	a=b;
+	b=F;
+	}
+	return F;
+}
+int main()
+{
+long t,F;
+scanf("%ld",&t);
+F=fbi(t); 
+printf("首个大于%ld的数是%ld\n",t,F);
+getch();
+return 0;
+}
