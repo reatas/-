@@ -1,0 +1,18 @@
+#include <stdio.h> 
+int main()
+{ 
+	int k;
+	int t;
+	float sum=0;
+	float j=2;
+	float i=1;
+	for(k=0;k<20;k++)
+	{
+		sum+=j/i;
+		t=i;
+		i=j;
+		j=t+j;
+	}
+	printf("%f",sum);
+	return;
+}
